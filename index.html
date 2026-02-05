@@ -31,6 +31,7 @@
 
         <!-- First Question -->
         <div class="question-section" id="question1">
+            <img src="https://res.cloudinary.com/dwnd5kksw/image/upload/v1770255448/DSCN0026_pr1bmw.jpg" alt="Our memory" class="question-image">
             <h2 id="question1Text"></h2>
             <button class="cute-btn" onclick="moveButton(this)" id="yesBtn1"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn1"></button>
@@ -42,6 +43,7 @@
 
         <!-- Second Question (Love Meter) -->
         <div class="question-section hidden" id="question2">
+            <img src="https://res.cloudinary.com/dwnd5kksw/image/upload/v1770255184/IMG_0039_hxswdm.jpg" alt="Our memory" class="question-image">
             <h2 id="question2Text"></h2>
             <!-- Love meter settings: min="0" max="10000" -->
             <div class="love-meter">
@@ -56,6 +58,9 @@
 
         <!-- Final Question -->
         <div class="question-section hidden" id="question3">
+            <video id="celebrationVideo" class="celebration-video" loop playsinline>
+                <source src="https://res.cloudinary.com/dwnd5kksw/video/upload/v1770255078/DED56C91-7648-42C4-803D-1B9E85BEEE0A_lvluph.mp4" type="video/mp4">
+            </video>
             <h2 id="question3Text"></h2>
             <button class="cute-btn final-yes" onclick="celebrate()" id="yesBtn3"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn3"></button>
