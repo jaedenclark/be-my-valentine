@@ -175,15 +175,19 @@ window.addEventListener('load', setInitialPosition);
 
 // Celebration function
 function celebrate() {
-    document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
+    d    document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
     const celebration = document.getElementById('celebration');
     celebration.classList.remove('hidden');
-    
+
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
     document.getElementById('celebrationMessage').textContent = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
-    
+
+    // Play the celebration video with sound
+    const video = document.getElementById('celebrationVideo');
+    video.play();
+
     // Create heart explosion effect
     createHeartExplosion();
 }
